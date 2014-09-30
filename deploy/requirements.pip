@@ -1,0 +1,10 @@
+# Some useful extensions from official Flask extensions registry
+# http://flask.pocoo.org/extensions/
+Flask
+Flask-WTF
+Flask-Babel
+Flask-DebugToolbar
+Flask-Script
+Flask-SQLAlchemy
+Flask-Testing
+Flask-Mail

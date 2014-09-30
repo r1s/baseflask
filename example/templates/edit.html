@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<form action="" method="POST">
+  <legend>{{ _('Example add item') }}</legend>
+    {{ form.hidden_tag() }}
+    {% if form.errors %}
+      <div class="alert alert-error">
+        {{ wtf.form_errors(form, False) }}
+      </div>
+    {% endif %}
+    {{ wtf.inline_field(form.title) }}
+    {{ wtf.inline_field(form.description) }}
+      <div class="form-actions">
+        <button name="action_save" type="submit" class="btn btn-primary">{{ form.submit.label }}</button>
+      </div>
+  </form>
+</body>
+</html>
